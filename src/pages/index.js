@@ -5,6 +5,7 @@ import { ThemeContext } from "../layouts";
 import Blog from "../components/Blog";
 import Hero from "../components/Hero";
 import Seo from "../components/Seo";
+import Article from "../components/Article";
 
 class IndexPage extends React.Component {
   separator = React.createRef();
@@ -40,16 +41,24 @@ class IndexPage extends React.Component {
 
     return (
       <React.Fragment>
-        <ThemeContext.Consumer>
+         {/*<ThemeContext.Consumer>
           {theme => (
             <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} theme={theme} />
           )}
         </ThemeContext.Consumer>
 
-        <hr ref={this.separator} />
+        <hr ref={this.separator} /> */}
+
+        {/*<ThemeContext.Consumer>
+          {theme => <Blog posts={posts} theme={theme} /> }
+        </ThemeContext.Consumer>*/}
 
         <ThemeContext.Consumer>
-          {theme => <Blog posts={posts} theme={theme} />}
+          {theme => (
+            <Article theme={theme}>
+              <p>TODO: Pull in about.md here.</p>
+            </Article>
+          )}
         </ThemeContext.Consumer>
 
         <Seo facebook={facebook} />

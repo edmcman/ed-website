@@ -92,7 +92,7 @@ class Header extends React.Component {
 
             &.homepage {
               position: absolute;
-              background-color: transparent;
+              /*background-color: transparent; */
               height: ${theme.header.height.homepage};
             }
           }
@@ -200,10 +200,10 @@ class Header extends React.Component {
               &.homepage:not(.fixed) {
                 :global(a.logoType),
                 h1 {
-                  color: ${theme.color.neutral.white};
+                  #color: ${theme.color.neutral.white};
                 }
                 h2 {
-                  color: ${theme.color.neutral.gray.d};
+                  #color: ${theme.color.neutral.gray.d};
                 }
               }
             }
