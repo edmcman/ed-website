@@ -1,8 +1,10 @@
 ---
-title: About
+title: About me
+menuTitle: About me
 ---
 
-This is a demo site of the [HeroBlog](https://github.com/greglobinski/gatsby-starter-hero-blog), a [GatsbyJS](https://www.gatsbyjs.org/) starter.
+Hi, I'm Edward J. Schwartz.  I'm a researcher at [SEI](http://www.sei.cmu.edu)/[CERT](http://www.cert.org).
+
 
 ### Features:
 
